@@ -1,12 +1,49 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./index.css";
+import Main from "./pages/Main";
+
+ReactDOM.render(
+    <Main />,
+    document.getElementById('root')
+);
+
+/*import Button from 'react-bootstrap/Button';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class HomeNavBar extends React.Component {
+    render() {
+        return (
+            <Navbar bg="dark" variant="dark">
+                <Navbar.Brand href="#home">
+                    <img
+                        alt=""
+                        src="/logo192.png"
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top"
+                    />{' '}
+                    React ELPanel
+                </Navbar.Brand>
+                <Nav className="mr-auto">
+                    <Nav.Link href="#home">Home</Nav.Link>
+                    <Nav.Link href="#servers">Servers</Nav.Link>
+                    <Nav.Link href="#config">Config</Nav.Link>
+                </Nav>
+            </Navbar>
+        );
+    }
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+class HomePage extends React.Component {
+    render() {
+        return (
+            <HomeNavBar />
+        );
+    }
+}*/
+
+// ========================================
