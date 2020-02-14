@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Table from "react-bootstrap/Table";
+import Spinner from "react-bootstrap/Spinner";
 
 class Servers extends Component {
   render() {
@@ -11,29 +12,31 @@ class Servers extends Component {
         <Table striped bordered hover responsive variant="dark">
           <thead>
             <tr>
-              <th>#</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Username</th>
+              <th>Status</th>
+              <th>Server Name</th>
+              <th>Players</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>1</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td><Spinner animation="grow" variant="success" /></td>
+              <td>Lobby</td>
+              <td>1 / 16 Players</td>
             </tr>
             <tr>
-              <td>2</td>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <td><Spinner animation="grow" variant="success" /></td>
+              <td>Survival</td>
+              <td>29 / 30 Players</td>
             </tr>
             <tr>
-              <td>3</td>
-              <td colSpan="2">Larry the Bird</td>
-              <td>@twitter</td>
+              <td><Spinner animation="grow" variant="success" /></td>
+              <td>Bungecord</td>
+              <td>134 / 200 Players</td>
+            </tr>
+            <tr>
+              <td><Spinner animation="grow" variant="danger" /></td>
+              <td>Factions</td>
+              <td>0 / 150 Players</td>
             </tr>
           </tbody>
         </Table>
