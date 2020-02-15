@@ -20,8 +20,19 @@ body {
 
 hr {
     background-color: rgb(82, 82, 82);
+    color: #25c025;
 }
 
 .content-header {
     margin-top: 16px;
+}
+
+.server-link {
+    color: white;
+    text-decoration: none;
+}
+
+.server-link:hover {
+    color: white;
+    text-decoration: none;
 }

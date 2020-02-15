@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheckCircle, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import Container from "react-bootstrap/Container";
 import Table from "react-bootstrap/Table";
 import Spinner from "react-bootstrap/Spinner";
@@ -18,24 +21,24 @@ class Servers extends Component {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td><Spinner animation="grow" variant="success" /></td>
-              <td>Lobby</td>
+            <tr href="a">
+              <td><FontAwesomeIcon icon={faCheckCircle} color="#25c025"/></td>
+              <td><Link to="/server?id=1" className="server-link">Lobby</Link></td>
               <td>1 / 16 Players</td>
             </tr>
             <tr>
-              <td><Spinner animation="grow" variant="success" /></td>
-              <td>Survival</td>
+              <td><FontAwesomeIcon icon={faCheckCircle} color="#25c025"/></td>
+              <td><Link to="/server?id=2" className="server-link">Survival</Link></td>
               <td>29 / 30 Players</td>
             </tr>
             <tr>
-              <td><Spinner animation="grow" variant="success" /></td>
-              <td>Bungecord</td>
+              <td><FontAwesomeIcon icon={faCheckCircle} color="#25c025"/></td>
+              <td><Link to="/server?id=3" className="server-link">Bungeecord</Link></td>
               <td>134 / 200 Players</td>
             </tr>
             <tr>
-              <td><Spinner animation="grow" variant="danger" /></td>
-              <td>Factions</td>
+              <td><FontAwesomeIcon icon={faTimesCircle} color="#ff2f2f"/></td>
+              <td><Link to="/server?id=4" className="server-link">Factions</Link></td>
               <td>0 / 150 Players</td>
             </tr>
           </tbody>
