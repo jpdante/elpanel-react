@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { Route, NavLink, HashRouter, withRouter } from "react-router-dom";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from "react-bootstrap/Container";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
-import Home from "./Home";
-import Servers from "./Servers";
-import Server from "./Server";
+import Home from "./Home/Home";
+import Servers from "./Servers/Servers";
+import Server from "./Server/Server";
 
 class Main extends Component {
   render() {
@@ -31,7 +31,7 @@ class Main extends Component {
             </Nav>
             <Nav>
               <NavDropdown title={<FontAwesomeIcon icon={faUser} />} id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#login">Login</NavDropdown.Item>
+                <NavDropdown.Item href="#logout">Logout</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Container>
@@ -46,4 +46,4 @@ class Main extends Component {
   }
 }
 
-export default Main;
+export default withRouter(Main);

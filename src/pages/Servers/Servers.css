@@ -1,0 +1,26 @@
+.status-limit {
+    width: 75px !important;
+}
+
+.center-content {
+    text-align: center;
+}
+
+.right-content {
+    text-align: right;
+    width: 200px !important;
+}
+
+.margin-btn {
+    padding-top: 25px !important;
+}
+
+.btn {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+.console {
+    width: 100% !important;
+    background-color: black;
+}
