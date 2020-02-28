@@ -13,14 +13,13 @@
 
 .margin-btn {
     padding-top: 25px !important;
-}
-
-.btn {
     margin-top: 5px !important;
     margin-bottom: 5px !important;
 }
 
 .console {
     width: 100% !important;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    white-space: pre-wrap;
 }
